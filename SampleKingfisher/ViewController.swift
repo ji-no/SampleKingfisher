@@ -29,13 +29,26 @@ class ViewController: UIViewController {
         ]
         
         let url: URL = URL(string: "https://raw.githubusercontent.com/yeatse/KingfisherWebP/62de44f4c60a00c9efd70f58c4bd88b94a28e66d/Tests/Resources/heart.webp")!
-        imageView.kf.setImage(
-            with: url,
-            options: [
-                .processor(WebPProcessor.default),
-                .cacheSerializer(WebPSerializer.default)
-            ]
-        )
+//        let url: URL = URL(string: "https://i.pinimg.com/originals/f7/b3/db/f7b3db9036f64203f261a894b1c6333b.gif")!
+
+        KingfisherManager.shared.downloader.downloadImage(with: url, options: KingfisherManager.shared.defaultOptions) { result in
+            switch result {
+            case .success(let value):
+                let image = value.image
+                self.imageView.image = image
+                
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
+        
+//        imageView.kf.setImage(
+//            with: url,
+//            options: [
+//                .processor(WebPProcessor.default),
+//                .cacheSerializer(WebPSerializer.default)
+//            ]
+//        )
     }
 
 
