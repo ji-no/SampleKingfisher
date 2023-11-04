@@ -13,9 +13,11 @@
 		3B7B9A8D2AF6272F005DD200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B9A8B2AF6272F005DD200 /* Main.storyboard */; };
 		3B7B9A8F2AF62730005DD200 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B9A8E2AF62730005DD200 /* Assets.xcassets */; };
 		3B7B9A922AF62730005DD200 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7B9A902AF62730005DD200 /* LaunchScreen.storyboard */; };
+		D5CEBEE3D8CEF9DF8EA7F732 /* Pods_SampleKingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE210A7E17E5532F46FA6B21 /* Pods_SampleKingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19FEDB46F657FCC81420200C /* Pods-SampleKingfisher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleKingfisher.release.xcconfig"; path = "Target Support Files/Pods-SampleKingfisher/Pods-SampleKingfisher.release.xcconfig"; sourceTree = "<group>"; };
 		3B7B9A822AF6272F005DD200 /* SampleKingfisher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleKingfisher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7B9A852AF6272F005DD200 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B7B9A872AF6272F005DD200 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		3B7B9A8E2AF62730005DD200 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7B9A912AF62730005DD200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B7B9A932AF62730005DD200 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63098EEFBD8D53014A1F67A8 /* Pods-SampleKingfisher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleKingfisher.debug.xcconfig"; path = "Target Support Files/Pods-SampleKingfisher/Pods-SampleKingfisher.debug.xcconfig"; sourceTree = "<group>"; };
+		DE210A7E17E5532F46FA6B21 /* Pods_SampleKingfisher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SampleKingfisher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CEBEE3D8CEF9DF8EA7F732 /* Pods_SampleKingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				3B7B9A842AF6272F005DD200 /* SampleKingfisher */,
 				3B7B9A832AF6272F005DD200 /* Products */,
+				5FF6E6BC1A4D86ED26665440 /* Pods */,
+				40C39C06B15B200D16B5348A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = SampleKingfisher;
 			sourceTree = "<group>";
 		};
+		40C39C06B15B200D16B5348A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE210A7E17E5532F46FA6B21 /* Pods_SampleKingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FF6E6BC1A4D86ED26665440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63098EEFBD8D53014A1F67A8 /* Pods-SampleKingfisher.debug.xcconfig */,
+				19FEDB46F657FCC81420200C /* Pods-SampleKingfisher.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B7B9A962AF62730005DD200 /* Build configuration list for PBXNativeTarget "SampleKingfisher" */;
 			buildPhases = (
+				ADD72C71D5B455056E62006F /* [CP] Check Pods Manifest.lock */,
 				3B7B9A7E2AF6272F005DD200 /* Sources */,
 				3B7B9A7F2AF6272F005DD200 /* Frameworks */,
 				3B7B9A802AF6272F005DD200 /* Resources */,
+				1D91F060AA33F891449D872F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D91F060AA33F891449D872F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleKingfisher/Pods-SampleKingfisher-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SampleKingfisher/Pods-SampleKingfisher-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SampleKingfisher/Pods-SampleKingfisher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADD72C71D5B455056E62006F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleKingfisher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B7B9A7E2AF6272F005DD200 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		3B7B9A972AF62730005DD200 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63098EEFBD8D53014A1F67A8 /* Pods-SampleKingfisher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		3B7B9A982AF62730005DD200 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19FEDB46F657FCC81420200C /* Pods-SampleKingfisher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
