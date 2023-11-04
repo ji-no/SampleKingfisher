@@ -6,6 +6,7 @@ target 'SampleKingfisher' do
   use_frameworks!
 
   # Pods for SampleKingfisher
-  pod 'Kingfisher', '~> 7.0'
+#  pod 'Kingfisher', '~> 7.0'
+  pod "KingfisherWebP"
 
 end
